@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "metacraftinfocommands",
+  "version": "${version}",
+
+  "name": "METAcraft info commands",
+  "description": "A mod that implements basic commands that show information for players on the meta server",
+  "authors": [
+    "Hampus Hallkvist"
+  ],
+  "contact": {
+    "homepage": "https://github.com/METAcraft-KTH/METAcraftInfoCommands",
+    "sources": "https://github.com/METAcraft-KTH/METAcraftInfoCommands"
+  },
+
+  "license": "",
+  "icon": "assets/metacraftinfocommands/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.hampushallkvist.metacraftinfocommands.Main"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
