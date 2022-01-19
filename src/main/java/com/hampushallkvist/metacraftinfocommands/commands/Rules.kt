@@ -12,7 +12,7 @@ import net.minecraft.util.Formatting
 class Rules : Command {
 
     companion object {
-        const val pageCount = 5
+        const val pageCount = 6
         val rules = arrayOf(
             arrayOf(
                 "Global Rules",
@@ -30,8 +30,8 @@ class Rules : Command {
                     (1) Sneaking into peoples bases and looking in chests is allowed. Stealing is prohibited. 
                     (2) Trap installation is permitted: Killing someone sneaking around your base with a trap is allowed.
                     (3) Pranks are allowed, but griefing, stealing or randomly killing players without reason is forbidden.
-                    (4) Using someone else’s farms without permission is forbidden.
-                    (5) You are also expected to follow good Minecraft etiquette. Don’t leave floating blocks etc. Keep it tidy.  
+                    (4) Using someone else’s farms without permission is forbidden. 
+                    (5) You are also expected to follow good Minecraft etiquette. Don’t leave floating blocks etc. Keep it tidy.   
                 """.trimIndent()
             ),
             arrayOf(
@@ -58,6 +58,16 @@ class Rules : Command {
                     (2) The killing of exiles will be rewarded by the Borgarråd.
                     (3) Brave adventurers will be able to form bands and head out in search of power and glory (TBA).
                 """.trimIndent()
+            ),
+            arrayOf(
+                "Land plots",
+                """
+                    Building is restricted in META-borg, but is allowed if you own a land plot. 
+                    (1) You own a plot by owning a book signed by Borgarrådet
+                        (a) You are only allowed to own one plot at a time in META-borg proper (META-hamn is unlimited).
+                    (2) You are allowed to build down 5 blocks and up 10 blocks (can be increased). You can never build above y:115 or below y:70.
+                    (3) You are allowed to decorate surrounding land, within reason (pathways, flowers, lamps, etc)
+                """.trimIndent()
             )
         )
     }
@@ -78,7 +88,7 @@ class Rules : Command {
     private fun menu(context: CommandContext<ServerCommandSource>): Int {
         val string = buildString {
             append("""
-                At positive z-coords the Civilization stands, ruled by the benevolent bureaucracy of the Borgarråd. A great procedurally generated infinite wall along the z=0 line separates it from the deadly steppes of the Wilderness, a place filled with danger and chaos.
+                At positive z-coords, the Civilization stands. An infinite wall along the z=0 line separates it from the deadly steppes of the Wilderness.
                 Do /rules <page_nr> to go to page.
             """.trimIndent())
             append("\n")
