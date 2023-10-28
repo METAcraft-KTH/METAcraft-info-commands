@@ -4,13 +4,13 @@
   "version": "${version}",
 
   "name": "METAcraft info commands",
-  "description": "A mod that implements basic commands that show information for players on the meta server",
+  "description": "A mod that allows the creation of custom information commands from a config file.",
   "authors": [
-    "Hampus Hallkvist"
+    "Acuadragon100"
   ],
   "contact": {
-    "homepage": "https://github.com/METAcraft-KTH/METAcraftInfoCommands",
-    "sources": "https://github.com/METAcraft-KTH/METAcraftInfoCommands"
+    "homepage": "https://github.com/METAcraft-KTH/METAcraft-info-commands",
+    "sources": "https://github.com/METAcraft-KTH/METAcraft-info-commands"
   },
 
   "license": "",
@@ -19,16 +19,17 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.hampushallkvist.metacraftinfocommands.Main"
+      "se.datasektionen.mc.infocommands.Info"
     ]
   },
   "mixins": [
+    "metacraftinfocommands.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "1.20.x",
     "java": ">=17"
   }
 }

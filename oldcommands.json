@@ -1,0 +1,106 @@
+{
+	"comment": "Original commands by Hampus Hallkvist, converted to the new format.",
+	"commands": {
+		"worldmap": {
+			"message": {
+				"text": "World map: ",
+				"extra": [
+					{
+						"text": "http://mc.datasektionen.se:5555",
+						"clickEvent": {
+							"action": "open_url",
+							"value": "http://mc.datasektionen.se:5555"
+						}
+					}
+				]
+			}
+		},
+		"rules": {
+			"message": {
+				"text": "================== Rules [0/6] ==================\n",
+				"extra": [
+					{"text": "At positive z-coords, the Civilization stands. "},
+					{"text": "An infinite wall along the z=0 line separates it from the deadly steppes of the Wilderness.\n"},
+					{"text": "Do /rules <page_nr> to go to page.\n"},
+					{"text": "[1] Global Rules\n"},
+					{"text": "[2] Civilization\n"},
+					{"text": "[3] META-borg\n"},
+					{"text": "[4] Great Wall\n"},
+					{"text": "[5] Wilderness\n"},
+					{"text": "[6] Land plots"}
+				],
+				"color": "gold"
+			},
+			"subCommands": {
+				"1": {
+					"text": "================== Global Rules [1/6] ==================\n",
+					"extra": [
+						{"text": "(1) Intentionally crashing the server or creating lag is strictly prohibited.\n"},
+						{"text": "(2) Some client-side mods are allowed (ask mods before entering the server with them).\n"},
+						{"text": "(3) The use botting or cheat-clients is strictly forbidden, even in the Wilderness.\n"},
+						{"text": "(4) Any forms of duping are forbidden (with the sole exception of TNT-duping)."}
+					],
+					"color": "gold"
+				},
+				"2": {
+					"text": "================== Civilization [2/6] ==================\n",
+					"extra": [
+						{"text": "The Civilization is located at the positive z-coords. Fire tick and TNT block-breaking is disabled.\n"},
+						{"text": "(1) Sneaking into peoples bases and looking in chests is allowed. Stealing is prohibited.\n"},
+						{"text": "(2) Trap installation is permitted: Killing someone sneaking around your base with a trap is allowed.\n"},
+						{"text": "(3) Pranks are allowed, but griefing, stealing or randomly killing players without reason is forbidden.\n"},
+						{"text": "(4) Using someone else’s farms without permission is forbidden.\n"},
+						{"text": "(5) You are also expected to follow good Minecraft etiquette. Don’t leave floating blocks etc. Keep it tidy."}
+					],
+					"color": "gold"
+				},
+				"3": {
+					"text": "================== META-borg [3/6] ==================\n",
+					"extra": [
+						{"text": "META-borg is the capital city of the Civilization. It contains the spawn (0, 0).\n"},
+						{"text": "(1) Within the city, griefing and stealing is strictly prohibited.\n"},
+						{"text": "(2) Larger build projects will require permits.\n"},
+						{"text": "(3) Chunk loading on the server requires a permit from Borgarrådet.\n"},
+						{"text": "(4) Repeatedly breaking the rules of the server will lead to exile into the Wilderness. "},
+						{"text": "Exiles have red names and anyone is allowed to kill them."}
+					],
+					"color": "gold"
+				},
+				"4": {
+					"text": "================== Great Wall [4/6] ==================\n",
+					"extra": [
+						{"text": "The Great Wall is the last defence measure of the Civilization and it exerts a magical force over exiles so that they cannot physically pass it. "},
+						{"text": "Yet, nothing prevents exiles from shooting toward you if you are close enough. "},
+						{"text": "Hang around close to the Great Wall at your own peril."}
+					],
+					"color": "gold"
+				},
+				"5": {
+					"text": "================== Wilderness [5/6] ==================\n",
+					"extra": [
+						{"text": "In the Wilderness Chaos rules. It is located at the negative z-coords and the Great Wall separates it from the Civilization. "},
+						{"text": "Apart from hacking, botting, duping, or intentionally lagging the server, ANYTHING is permitted.\n"},
+						{"text": "(1) PvP is encouraged.\n"},
+						{"text": "(2) The killing of exiles will be rewarded by the Borgarråd.\n"},
+						{"text": "(3) Brave adventurers will be able to form bands and head out in search of power and glory (TBA)."}
+					],
+					"color": "gold"
+				},
+				"6": {
+					"text": "================== Land plots [6/6] ==================\n",
+					"extra": [
+						{"text": "Building is restricted in META-borg, but is allowed if you own a land plot.\n"},
+						{"text": "(1) You own a plot by owning a book signed by Borgarrådet\n"},
+						{"text": "    (a) You are only allowed to own one plot at a time in META-borg proper (META-hamn is unlimited).\n"},
+						{"text": "(2) You are allowed to build down 5 blocks and up 10 blocks (can be increased). "},
+						{"text": "You can never build above y:115 or below y:70.\n"},
+						{"text": "(3) You are allowed to decorate surrounding land, within reason (pathways, flowers, lamps, etc)"}
+					],
+					"color": "gold"
+				}
+			}
+		}
+	},
+	"resendCommandTreeOnReload": true,
+	"enableResendCommandTreeCommand": false
+}
