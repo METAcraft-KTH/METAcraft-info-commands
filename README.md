@@ -8,7 +8,7 @@ Under `commands` you specify all the commands you want with the name as the key 
 The display value can either be [raw JSON text](https://minecraft.wiki/w/Raw_JSON_text_format), 
 or it can be a json node containing the `message` field which is 
 [raw JSON text](https://minecraft.wiki/w/Raw_JSON_text_format) and an optional
-`sub-commands` which contains a map of subcommands in the same format.
+`subCommands` which contains a map of sub-commands in the same format.
 
 A default config file will be generated with a few examples.
 
